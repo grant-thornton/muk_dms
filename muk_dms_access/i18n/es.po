@@ -1,0 +1,223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#   * muk_dms_access
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-01-28 19:20+0000\n"
+"PO-Revision-Date: 2018-01-28 19:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_perm_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_perm_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_directory_perm_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_file_perm_access
+msgid "Access"
+msgstr "Acceso"
+
+#. module: muk_dms_access
+#: model:ir.actions.act_window,name:muk_dms_access.action_dms_groups
+#: model:ir.ui.menu,name:muk_dms_access.menu_dms_group
+msgid "Access Control"
+msgstr "Control de accesos"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_muk_dms_access_groups
+msgid "Access Groups"
+msgstr "Grupos de acceso"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_additional_users
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Additional Users"
+msgstr "Usuarios adicionales"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_child_groups
+msgid "Child Groups"
+msgstr "Grupos hijos"
+
+#. module: muk_dms_access
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_directory_form
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_file_form
+msgid "Complete Groups"
+msgstr "Grupos completos"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_perm_create
+msgid "Create"
+msgstr "Crear"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_departments
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Departments"
+msgstr "Departamentos"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_count_directories
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_directories
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Directories"
+msgstr "Directorios"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_muk_dms_file
+msgid "File"
+msgstr "Fichero"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_count_files
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_files
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Files"
+msgstr "Ficheros"
+
+#. module: muk_dms_access
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Group"
+msgstr "Grupo"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_name
+msgid "Group Name"
+msgstr "Nombre del grupo"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_hr_department_groups
+#: model:ir.model.fields,field_description:muk_dms_access.field_hr_job_groups
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_directory_form
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_file_form
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_tree
+msgid "Groups"
+msgstr "Grupos"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_hr_department
+msgid "Hr Department"
+msgstr "Departamento de Recursos Humanos"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_id
+msgid "ID"
+msgstr "ID"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_inherit_groups
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_directory_inherit_groups
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_file_inherit_groups
+msgid "Inherit Groups"
+msgstr "Grupos heredados"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_hr_job
+msgid "Job Position"
+msgstr "Puesto de trabajo"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_jobs
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Jobs"
+msgstr "Títulos de trabajo"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_parent_left
+msgid "Left Parent"
+msgstr "Padre izquierdo"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_muk_dms_access
+msgid "MuK Documents Access"
+msgstr "MuK Acceso a los documentos"
+
+#. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_muk_dms_directory
+msgid "MuK Documents Directory"
+msgstr "MuK Directorio de documentos"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_parent_group
+msgid "Parent Group"
+msgstr "Grupo padre"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_perm_read
+msgid "Read"
+msgstr "Lectura"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_parent_right
+msgid "Right Parent"
+msgstr "Padre derecho"
+
+#. module: muk_dms_access
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Settings"
+msgstr "Configuración"
+
+#. module: muk_dms_access
+#: sql_constraint:muk_dms_access.groups:0
+msgid "The name of the group must be unique!"
+msgstr "¡El nombre del grupo debe ser único!"
+
+#. module: muk_dms_access
+#: code:addons/muk_dms_access/models/dms_base.py:107
+#: code:addons/muk_dms_access/models/dms_base.py:204
+#, python-format
+msgid "This operation is forbidden!"
+msgstr "¡Esta operación está prohibida!"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_perm_unlink
+msgid "Unlink"
+msgstr "Eliminar"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_count_users
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_users
+#: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_perm_write
+msgid "Write"
+msgstr "Escritura"
