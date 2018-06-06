@@ -31,7 +31,7 @@
 			<field name="perm_access" readonly="1" />
 		</xpath>
 		<xpath expr="//page[last()]" position="after">
-			<page string="Groups" attrs="{'invisible':[('perm_access','=',False)]}">
+			<page string="Groups" attrs="{'invisible':[('perm_access','=',False)]}" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 				<field name="groups">
 					<tree string="Groups">
 						<field name="name" />
@@ -43,7 +43,7 @@
 					</tree>
 				</field>
 			</page>
-			<page string="Complete Groups" attrs="{'invisible':[('perm_access','=',False)]}">
+			<page string="Complete Groups" attrs="{'invisible':[('perm_access','=',False)]}" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 				<field name="complete_groups">
 					<tree string="Complete Groups">
 						<field name="name" />

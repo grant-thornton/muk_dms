@@ -48,7 +48,7 @@ class DocumentJob(models.Model):
     
     @api.multi
     def write(self, vals):
-        result = super(DocumentDepartment, self).write(vals)
+        result = super(DocumentJob, self).write(vals)
         if any(field in vals for field in ['employee_ids', 'department_id']):
             for record in self:
                 for group in record.groups:
@@ -57,10 +57,10 @@ class DocumentJob(models.Model):
     
     @api.multi
     def unlink(self):
-        groups = record.env['muk_dms_access.groups']
+        groups = self.env['muk_dms_access.groups']
         for record in self:
             groups |= record.groups
-        result = super(DocumentDepartment, self).unlink()
+        result = super(DocumentJob, self).unlink()
         for group in groups:
             group.trigger_computation(['users'])
         return result

@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-#   * muk_dms
+#	* muk_dms
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 10.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-01-28 18:47+0000\n"
-"PO-Revision-Date: 2018-01-28 18:47+0000\n"
+"POT-Creation-Date: 2018-06-05 12:09+0000\n"
+"PO-Revision-Date: 2018-06-05 12:09+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -43,6 +43,18 @@ msgstr "Modelo de datos base"
 #, python-format
 msgid "Changing the settings can cause a heavy migration process."
 msgstr "Cambiar las configuraciones puede causar un proceso de migración pesado."
+
+#. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_code
+msgid "Code"
+msgstr "Código"
+
+#. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_complete_groups
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_complete_groups
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_complete_groups
+msgid "Complete Groups"
+msgstr "Completar grupos"
 
 #. module: muk_dms
 #: model:ir.ui.menu,name:muk_dms.cat_menu_muk_dms_config
@@ -104,13 +116,17 @@ msgid "Custom Thumbnail"
 msgstr "Miniatura personalizada"
 
 #. module: muk_dms
+#: model:ir.ui.menu,name:muk_dms.cat_menu_muk_dms_documents
+msgid "Dashboard"
+msgstr "Tablero"
+
+#. module: muk_dms
 #: code:addons/muk_dms/models/dms_file.py:70
-#: model:ir.ui.menu,name:muk_dms.cat_menu_muk_dms_models
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
 #: selection:muk_dms.file,reference:0
 #, python-format
 msgid "Data"
-msgstr "Data"
+msgstr "Datos"
 
 #. module: muk_dms
 #: model:ir.actions.act_window,name:muk_dms.action_dms_data_database
@@ -195,7 +211,8 @@ msgid "Document Files"
 msgstr "Archivos de documentos"
 
 #. module: muk_dms
-#: model:ir.ui.menu,name:muk_dms.cat_menu_muk_dms_documents
+#: model:ir.ui.menu,name:muk_dms.main_menu_muk_dms
+#: model:ir.ui.menu,name:muk_dms.menu_dms_tree_view
 msgid "Document Management"
 msgstr "Gestión documental"
 
@@ -212,16 +229,14 @@ msgid "Document Settings"
 msgstr "Configuración documentos"
 
 #. module: muk_dms
+#: model:ir.module.category,name:muk_dms.category_dms_security
+msgid "Document management"
+msgstr "Gestión documental"
+
+#. module: muk_dms
 #: model:ir.actions.client,name:muk_dms.action_dms_documents
 msgid "DocumentTreeView"
 msgstr "Vista árbol de documentos"
-
-#. module: muk_dms
-#: model:ir.module.category,name:muk_dms.category_dms_security
-#: model:ir.ui.menu,name:muk_dms.main_menu_muk_dms
-#: model:ir.ui.menu,name:muk_dms.menu_dms_tree_view
-msgid "Documents"
-msgstr "Documentos"
 
 #. module: muk_dms
 #. openerp-web
@@ -285,6 +300,13 @@ msgstr "Nombre de archivo"
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_tree
 msgid "Files"
 msgstr "Ficheros"
+
+#. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_groups
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_groups
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_groups
+msgid "Groups"
+msgstr "Grupos"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_id
@@ -488,7 +510,7 @@ msgstr "Padre derecho"
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_is_root_directory
 msgid "Root Directory"
-msgstr "Directorio raís"
+msgstr "Directorio raíz"
 
 #. module: muk_dms
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_settings_form
@@ -545,32 +567,39 @@ msgstr "Información técnica"
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:233
+#: code:addons/muk_dms/models/dms_base.py:238
 #: code:addons/muk_dms/models/dms_base.py:246
+#: code:addons/muk_dms/models/dms_base.py:251
 #, python-format
 msgid "The record is already locked by another user. (%s)"
 msgstr "El registro ya está bloqueado por otro usuario. (%s)"
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:235
+#: code:addons/muk_dms/models/dms_base.py:240
 #: code:addons/muk_dms/models/dms_base.py:248
+#: code:addons/muk_dms/models/dms_base.py:253
 #, python-format
 msgid "The record is already locked."
 msgstr "El registro ya está bloqueado."
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:226
+#: code:addons/muk_dms/models/dms_base.py:231
 #, python-format
 msgid "The record is locked by a user, so it can't be changes or deleted."
 msgstr "El registro está bloqueado por un usuario, por lo que no se puede modificar ni eliminar."
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:220
+#: code:addons/muk_dms/models/dms_base.py:225
 #, python-format
 msgid "The record is locked, so it can't be changes or deleted."
 msgstr "El registro está bloqueado, por lo que no se puede modificar ni eliminar."
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:172
+#: code:addons/muk_dms/models/dms_base.py:177
 #, python-format
 msgid "The record is locked, so it can't be locked again."
 msgstr "El registro está bloqueado, por lo que no se puede volver a bloquear."
@@ -582,6 +611,7 @@ msgstr "El tipo Guardar se usa para determinar cómo se guarda un archivo en el 
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_base.py:407
+#: code:addons/muk_dms/models/dms_base.py:412
 #, python-format
 msgid "This operation is forbidden!"
 msgstr "¡Esta operación está prohibida!"
@@ -631,3 +661,4 @@ msgstr "Referencia del usuario"
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_perm_write
 msgid "Write"
 msgstr "Escribir"
+

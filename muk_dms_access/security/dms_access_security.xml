@@ -18,7 +18,7 @@
 -->
 
 <odoo>
-
+<!--
 <record id="rule_edit_groups_user" model="ir.rule">
     <field name="name">User can only edit their own groups.</field>
     <field name="model_id" ref="model_muk_dms_access_groups"/>
@@ -29,6 +29,6 @@
     <field name="perm_unlink" eval="1" />
     <field name="domain_force">[('create_uid','=',user.id)]</field>
 </record>
-	
+-->
 </odoo>
 

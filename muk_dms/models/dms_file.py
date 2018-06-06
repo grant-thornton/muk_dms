@@ -124,6 +124,10 @@ class File(dms_base.DMSModel):
         string='Locked by',
         related='locked.locked_by_ref')
     
+    code = fields.Char(
+        string='Code')
+
+    
     #----------------------------------------------------------
     # Functions
     #----------------------------------------------------------
@@ -251,6 +255,11 @@ class File(dms_base.DMSModel):
     # Create, Update, Delete
     #----------------------------------------------------------
     
+    @api.model
+    def create(self, vals):
+        vals['code'] = self.env['ir.sequence'].next_by_code('muk_dms.file')
+        return super(File, self).create(vals)
+
     @api.constrains('name')
     def _check_name(self):
         if not self.check_name(self.name):

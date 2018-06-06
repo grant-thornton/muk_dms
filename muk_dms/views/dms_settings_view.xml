@@ -90,7 +90,5 @@
 	<field name="view_mode">tree,form</field>
 </record>
 
-<menuitem id="menu_dms_settings" name="Document Settings"
-	parent="cat_menu_muk_dms_config" action="action_dms_settings" />
 
 </odoo>

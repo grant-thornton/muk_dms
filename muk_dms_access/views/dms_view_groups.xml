@@ -138,7 +138,11 @@
 	<field name="view_mode">tree,form</field>
 </record>
 
-<menuitem id="menu_dms_group" name="Access Control"
-	parent="muk_dms.cat_menu_muk_dms_config" action="action_dms_groups" />
-		
+<menuitem
+	id="menu_dms_group"
+	name="Access Control"
+	action="action_dms_groups"
+	sequence="20"
+	parent="muk_dms.cat_menu_muk_dms_config"/>
+
 </odoo>

@@ -107,14 +107,19 @@ class DMSBaseModel(models.BaseModel):
     # Read
     #----------------------------------------------------------
     
-    @api.multi
-    def read(self, fields=None, load='_classic_read'):
-        fields = self._before_read(fields)
-        result = super(DMSBaseModel, self).read(fields, load)
-        for index, record in enumerate(self):
-            result[index] = record._after_read_record(result[index])
-        result = self._after_read(result)
-        return result
+#    @api.multi
+#    def read(self, fields=None, load='_classic_read'):
+#        fields = self._before_read(fields)
+#        result = super(DMSBaseModel, self).read(fields, load)
+#        for index, record in enumerate(self):
+#            if index < len(result):
+#                result[index] = record._after_read_record(result[index])
+#            #if len(result) = 1 or index < len(result):
+#            #    index = index - 1
+#            #import pdb;pdb.set_trace()
+#                #result[index] = record._after_read_record(result[index])
+#        result = self._after_read(result)
+#        return result
 
     def _before_read(self, fields):
         return fields

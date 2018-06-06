@@ -22,33 +22,37 @@
 {
     "name": "MuK Documents",
     "summary": """Document Management System""",
-    "description": """ 
-        
+    "description": """
+
     """,
-    "version": '10.0.1.2.0',   
-    "category": 'Document Management',   
+    "version": '10.0.1.2.0',
+    "category": 'Document Management',
     "license": "AGPL-3",
     "website": "http://www.mukit.at",
-    "author": "MuK IT",
+    "author": "MuK IT, Grant Thornton S.L.P.",
     "contributors": [
         "Mathias Markl <mathias.markl@mukit.at>",
         "Kerrim Abdelhamed <kerrim.adbelhamed@mukit.at>",
+        "Janire Olaguibel <janire.olaguibel@es.gt.com>",
+        "Janire Olaguibel <josealberto.yepez@es.gt.com>",
     ],
     "depends": [
         "muk_web_preview",
         "muk_web_client_refresh",
     ],
     "data": [
+        "data/dms_file_sequence.xml",
         "security/dms_security.xml",
         "security/ir.model.access.csv",
         "template/assets.xml",
-        "views/dms_menu.xml",
         "views/dms_actions.xml",
         "views/dms_settings_view.xml",
         "views/dms_directory_view.xml",
         "views/dms_file_view.xml",
         "views/dms_data_view.xml",
         "views/dms_lock_view.xml",
+        "views/dms_res_config_views.xml",
+        "views/dms_menu.xml",
     ],
     "demo": [
     ],

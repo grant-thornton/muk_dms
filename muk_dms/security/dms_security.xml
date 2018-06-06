@@ -20,7 +20,7 @@
 <odoo>
 
 <record  id="category_dms_security" model="ir.module.category">
-	<field name="name">Documents</field>
+	<field name="name">Document management</field>
 </record>
 
 <record id="group_dms_user" model="res.groups">

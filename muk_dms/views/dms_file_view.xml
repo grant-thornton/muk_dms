@@ -96,6 +96,7 @@
 				</div>
  				<group>
  					<field name="relational_path" widget="dms_relpath" />
+ 					<field name="code" readonly="True"/>
 				</group>
 				<group string="Data">
 					<group>
@@ -103,12 +104,12 @@
 						<field name="size" widget="dms_size" />
 					</group>
 					<group>
-						<field name="extension" />
-						<field name="mimetype" />
+						<field name="extension" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
+						<field name="mimetype" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
 					</group>
 				</group>
 				<group string="Settings">
-					<group>
+					<group groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 						<field name="settings" />
 					</group>
 					<group>
@@ -116,7 +117,7 @@
 					</group>
 				</group>
 				<notebook>
-					<page string="Access Information">
+					<page string="Access Information" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 						<group>
 							<group>
 								<field name="perm_read" readonly="1" />
@@ -128,7 +129,7 @@
 							</group>
 						</group>
 					</page>
-					<page string="Meta Information" groups="base.group_no_one">
+					<page string="Meta Information" groups="base.group_no_one,muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 						<group>
 							<group>
 								<field name="id" />
@@ -167,8 +168,5 @@
 	<field name="res_model">muk_dms.file</field>
 	<field name="view_mode">kanban,tree,form</field>
 </record>
-
-<menuitem id="menu_dms_file" name="Files"
-	parent="cat_menu_muk_dms_models" action="action_dms_file" />
 
 </odoo>

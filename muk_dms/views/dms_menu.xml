@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--     
+<!--
 	Copyright (C) 2017 MuK IT GmbH
-	
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
@@ -14,31 +14,73 @@
     GNU Affero General Public License for more details.
 
     You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <odoo>
 
-<menuitem id="main_menu_muk_dms" name="Documents"
-	web_icon="muk_dms,static/description/icon.png"
-	groups="group_dms_user" />
+    <menuitem
+        id="main_menu_muk_dms" name="Document Management"
+    	web_icon="muk_dms,static/description/icon.png"
+    	groups="group_dms_user" />
 
-<menuitem id="cat_menu_muk_dms_documents" 
-	name="Document Management"
-	parent="main_menu_muk_dms" />
-<menuitem id="cat_menu_muk_dms_config" 
-	name="Configuration"
-	parent="main_menu_muk_dms" />
-<menuitem id="cat_menu_muk_dms_models" 
-	name="Data"
-	parent="main_menu_muk_dms" />
-<menuitem id="cat_menu_muk_dms_files" 
-	name="System Data" 
-	groups="base.group_no_one"
-	parent="main_menu_muk_dms" />
-<menuitem id="cat_menu_muk_dms_locks" 
-	name="Locks" 
-	groups="base.group_no_one"
-	parent="main_menu_muk_dms" />
-	
+    <menuitem
+        id="cat_menu_muk_dms_documents"
+    	name="Dashboard"
+    	parent="main_menu_muk_dms"
+        sequence="10"/>
+
+    <menuitem
+        id="menu_dms_tree_view"
+        name="Document Management"
+        parent="cat_menu_muk_dms_documents"
+        action="action_dms_documents"/>
+
+    <menuitem
+        id="menu_dms_directory"
+        name="Directories"
+        parent="cat_menu_muk_dms_documents"
+        action="action_dms_directory" />
+
+    <menuitem
+        id="menu_dms_file"
+        name="Files"
+        parent="cat_menu_muk_dms_documents"
+        action="action_dms_file" />
+
+    <menuitem
+        id="cat_menu_muk_dms_files"
+    	name="System Data"
+    	groups="group_dms_admin"
+    	parent="main_menu_muk_dms"
+        sequence="30"/>
+
+    <menuitem
+        id="menu_dms_data_database"
+        name="Database Data"
+        parent="cat_menu_muk_dms_files"
+        action="action_dms_data_database" />
+
+    <menuitem
+        id="cat_menu_muk_dms_locks"
+    	name="Locks"
+    	groups="group_dms_admin"
+    	parent="main_menu_muk_dms"
+        sequence="40"/>
+
+    <menuitem
+        id="cat_menu_muk_dms_config"
+        name="Configuration"
+        groups="group_dms_admin"
+        parent="main_menu_muk_dms"
+        sequence="100"/>
+
+    <menuitem
+        id="menu_muk_dms_configuration"
+        name="Settings"
+        parent="cat_menu_muk_dms_config"
+        sequence="1"
+        action="action_muk_dms_configuration"
+        groups="base.group_system"/>
+
 </odoo>

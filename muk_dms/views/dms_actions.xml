@@ -24,7 +24,4 @@
 	<field name="tag">muk_dms_views.documents</field>
 </record>
 
-<menuitem id="menu_dms_tree_view" name="Documents"
-	parent="cat_menu_muk_dms_documents" action="action_dms_documents" />
-
 </odoo>

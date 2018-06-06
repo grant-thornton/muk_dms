@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-###################################################################################
-# 
+###############################################################################
+#
 #    Copyright (C) 2017 MuK IT GmbH
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-###################################################################################
+###############################################################################
 
 from . import dms_base
 from . import dms_settings
@@ -25,3 +25,4 @@ from . import dms_directory
 from . import dms_file
 from . import dms_data
 from . import dms_lock
+from . import dms_settings
