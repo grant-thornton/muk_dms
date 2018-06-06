@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
         <record id="view_muk_dms_configuration" model="ir.ui.view">
-            <field name="name">muk_dms.res.config.view</field>
-            <field name="model">muk_dms.config.settings</field>
+            <field name="name">muk.dms.res.config.view</field>
+            <field name="model">muk.dms.config.settings</field>
             <field name="arch" type="xml">
                 <form string="Configure Document Management" class="oe_form_configuration">
                     <header>
@@ -33,7 +33,7 @@
         <record id="action_muk_dms_configuration" model="ir.actions.act_window">
             <field name="name">Configure Document Management</field>
             <field name="type">ir.actions.act_window</field>
-            <field name="res_model">muk_dms.config.settings</field>
+            <field name="res_model">muk.dms.config.settings</field>
             <field name="view_mode">form</field>
             <field name="target">inline</field>
         </record>

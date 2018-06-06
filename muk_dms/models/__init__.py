@@ -25,4 +25,5 @@ from . import dms_directory
 from . import dms_file
 from . import dms_data
 from . import dms_lock
+from . import dms_config_settings
 from . import dms_settings
