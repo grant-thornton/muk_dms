@@ -89,6 +89,9 @@
 					class="oe_avatar oe_edit_only" 
 					options="{'size': [90, 90]}"/>
 				<div class="oe_title">
+					<h3>
+						<field name="content" filename="name" />
+					</h3>
 					<label for="name" class="oe_edit_only" />
 					<h1>
 						<field name="name" />
@@ -98,21 +101,14 @@
  					<field name="relational_path" widget="dms_relpath" />
  					<field name="code" readonly="True"/>
 				</group>
-				<group string="Data">
-					<group>
-						<field name="content" filename="name" />
+				<group>
+					<group string="Data">
 						<field name="size" widget="dms_size" />
-					</group>
-					<group>
 						<field name="extension" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
 						<field name="mimetype" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
 					</group>
-				</group>
-				<group string="Settings">
-					<group groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
+					<group string="Settings" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
 						<field name="settings" />
-					</group>
-					<group>
 						<field name="directory" />
 					</group>
 				</group>
@@ -149,7 +145,7 @@
 							</group>
 						</group>
 					</page>
-					<page string="Technical Information" groups="muk_dms.group_dms_admin,base.group_no_one">
+					<page string="Technical Information" groups="muk_dms.group_dms_admin,base.group_no_one,muk_dms.group_dms_manager">
 						<group>
 							<field name="reference" />
 						</group>
