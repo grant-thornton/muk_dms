@@ -153,6 +153,9 @@
 							<field name="index_content" nolabel="1" />
 						</group>
 					</page>
+					<page name="extra_info" string="Extra Information">
+						<field name="description"/>
+					</page>
 				</notebook>
 			</sheet>
 		</form>

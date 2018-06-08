@@ -129,6 +129,8 @@ class File(dms_base.DMSModel):
     
     active = fields.Boolean(default=True)
     
+    description = fields.Html()
+    
     #----------------------------------------------------------
     # Functions
     #----------------------------------------------------------
