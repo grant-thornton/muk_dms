@@ -348,7 +348,7 @@ class File(dms_base.DMSModel):
     def _update_reference_content(self, content):
         self.ensure_one()     
         self.check_access('write', raise_exception=True)
-        self.reference.sudo().update({'content': content})
+        #self.reference.sudo().update({'content': content})
     
     def _update_reference_type(self):
         self.ensure_one()     

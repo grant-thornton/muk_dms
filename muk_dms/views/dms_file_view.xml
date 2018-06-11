@@ -113,7 +113,7 @@
 					</group>
 				</group>
 				<notebook>
-					<page string="Access Information" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
+					<page string="Access Information" groups="muk_dms.group_dms_admin">
 						<group>
 							<group>
 								<field name="perm_read" readonly="1" />
@@ -125,7 +125,7 @@
 							</group>
 						</group>
 					</page>
-					<page string="Meta Information" groups="base.group_no_one,muk_dms.group_dms_manager,muk_dms.group_dms_admin">
+					<page string="Meta Information" groups="muk_dms.group_dms_admin">
 						<group>
 							<group>
 								<field name="id" />
@@ -145,7 +145,7 @@
 							</group>
 						</group>
 					</page>
-					<page string="Technical Information" groups="muk_dms.group_dms_admin,base.group_no_one,muk_dms.group_dms_manager">
+					<page string="Technical Information" groups="muk_dms.group_dms_admin">
 						<group>
 							<field name="reference" />
 						</group>

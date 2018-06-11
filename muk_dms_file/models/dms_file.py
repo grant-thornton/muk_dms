@@ -67,7 +67,7 @@ class SystemFile(dms_base.DMSModel):
 
     def _check_reference_values(self, values):
         super(SystemFile, self)._check_reference_values(values)
-        if 'path' in values:
-            self.reference.sudo().update({'dms_path': values['path']})
+        #if 'path' in values:
+        #    self.reference.sudo().update({'dms_path': values['path']})
         if "base_path" in values:
             self.reference.sudo().update({'base_path': values['base_path']})
