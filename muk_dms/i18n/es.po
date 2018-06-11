@@ -16,10 +16,20 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
+msgid "<span>(*) This configuration is related to the company you're logged into.</span>"
+msgstr "<span>(*) Esta configuración está relacionada con la compañía en la que está conectado</span>"
+
+#. module: muk_dms
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_directory_form
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
 msgid "Access Information"
 msgstr "Información de acceso"
+
+#. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_active
+msgid "Active"
+msgstr "Activo"
 
 #. module: muk_dms
 #: model:res.groups,name:muk_dms.group_dms_admin
@@ -34,9 +44,19 @@ msgid "An error occurred during download!"
 msgstr "¡Ha ocurrido un error con la descarga!"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
+msgid "Apply"
+msgstr "Aplicar"
+
+#. module: muk_dms
 #: model:ir.model,name:muk_dms.model_muk_dms_data
 msgid "Base Data Model"
 msgstr "Modelo de datos base"
+
+#. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
+msgid "Cancel"
+msgstr "Cancelar"
 
 #. module: muk_dms
 #: code:addons/muk_dms/models/dms_settings.py:89
@@ -50,6 +70,11 @@ msgid "Code"
 msgstr "Código"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_complete_groups
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_complete_groups
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_complete_groups
@@ -60,6 +85,12 @@ msgstr "Completar grupos"
 #: model:ir.ui.menu,name:muk_dms.cat_menu_muk_dms_config
 msgid "Configuration"
 msgstr "Configuración"
+
+#. module: muk_dms
+#: model:ir.actions.act_window,name:muk_dms.action_muk_dms_configuration
+#: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
+msgid "Configure Document Management"
+msgstr "Configurar Gestión Documental"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_data
@@ -92,6 +123,7 @@ msgid "Create File"
 msgstr "Crear fichero"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_create_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_create_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_create_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_create_uid
@@ -101,6 +133,7 @@ msgid "Created by"
 msgstr "Creado por"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_create_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_create_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_create_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_create_date
@@ -168,6 +201,11 @@ msgid "Delete"
 msgstr "Eliminar"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_settings_root_directories
 #: model:ir.ui.menu,name:muk_dms.menu_dms_directory
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_directory_tree
@@ -191,6 +229,7 @@ msgstr "Directorio o bloqueo de archivos"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_display_name
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_display_name
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_display_name
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_display_name
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_display_name
@@ -223,7 +262,6 @@ msgstr "Configuración documento"
 
 #. module: muk_dms
 #: model:ir.actions.act_window,name:muk_dms.action_dms_settings
-#: model:ir.ui.menu,name:muk_dms.menu_dms_settings
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_settings_tree
 msgid "Document Settings"
 msgstr "Configuración documentos"
@@ -273,6 +311,11 @@ msgid "Extension"
 msgstr "Extensión"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
+msgid "Extra Information"
+msgstr "Información extra"
+
+#. module: muk_dms
 #. openerp-web
 #: code:addons/muk_dms/static/src/js/dms_views_documents.js:167
 #: model:ir.model,name:muk_dms.model_muk_dms_file
@@ -302,6 +345,11 @@ msgid "Files"
 msgstr "Ficheros"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
+msgid "General"
+msgstr "General"
+
+#. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_groups
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_groups
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_groups
@@ -310,6 +358,7 @@ msgstr "Grupos"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_id
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_id
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_id
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_id
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_id
@@ -354,6 +403,7 @@ msgstr "Información"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access___last_update
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings___last_update
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data___last_update
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database___last_update
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory___last_update
@@ -364,6 +414,7 @@ msgid "Last Modified on"
 msgstr "Última modificación en"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_write_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_write_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_write_uid
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_write_uid
@@ -373,6 +424,7 @@ msgid "Last Updated by"
 msgstr "Última actualización por"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_config_settings_write_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_data_database_write_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_write_date
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_write_date
@@ -532,6 +584,7 @@ msgstr "Buscar..."
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_settings
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_settings
+#: model:ir.ui.menu,name:muk_dms.menu_muk_dms_configuration
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_directory_form
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
 msgid "Settings"
