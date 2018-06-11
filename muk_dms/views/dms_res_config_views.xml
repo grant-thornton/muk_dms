@@ -9,23 +9,14 @@
                         <button string="Apply" type="object" name="execute" class="oe_highlight"/>
                         <button string="Cancel" type="object" name="cancel" class="oe_link" special="cancel"/>
                     </header>
-                    <group string="General">
-                        <field name="company_id" invisible="1"/>
-                    </group>
-<!--                     <group string="Purchase Order">
-                        <field name="group_product_variant" widget="radio"/>
-                        <field name="group_uom" widget="radio"/>
-                        <field name="group_costing_method" widget="radio"/>
-                        <field name="module_purchase_requisition" widget="radio"/>
-                        <field name="group_manage_vendor_price" widget="radio"/>
-                        <field name="group_warning_purchase" widget="radio"/>
-                    </group>
-                    <group string="Location &amp; Warehouse">
-                        <field name="module_stock_dropshipping" widget="radio"/>
-                    </group> -->
                     <div>
                         <span>(*) This configuration is related to the company you're logged into.</span>
                     </div>
+                    <group name="general" string="General">
+                        <field name="company_id" invisible="1"/>
+                    </group>
+                    <group name="operational">
+                    </group>
                 </form>
             </field>
         </record>
