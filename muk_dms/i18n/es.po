@@ -16,6 +16,11 @@ msgstr ""
 "Plural-Forms: \n"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
+msgid "(Un)archiving the file. Do you want to proceed?"
+msgstr "(Des)archivando el fichero. ¿Quiere proceder?"
+
+#. module: muk_dms
 #: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
 msgid "<span>(*) This configuration is related to the company you're logged into.</span>"
 msgstr "<span>(*) Esta configuración está relacionada con la compañía en la que está conectado</span>"
