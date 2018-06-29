@@ -51,6 +51,7 @@
 			<field name="perm_create" invisible="1" />
 			<field name="perm_write" invisible="1" />
 			<field name="perm_unlink" invisible="1" />
+			<field name="code"/>
 			<field name="name" />
 			<field name="mimetype" />
 			<field name="size" widget="dms_size" />
