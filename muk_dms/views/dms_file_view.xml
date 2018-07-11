@@ -168,6 +168,20 @@
 	</field>
 </record>
 
+<record id="view_dms_file_search" model="ir.ui.view">
+    <field name="name">muk_dms.file.search</field>
+    <field name="model">muk_dms.file</field>
+    <field name="arch" type="xml">
+        <search string="Files">
+			<field name="name"/>
+			<field name="code"/>
+			<field name="relational_path"/>
+			<group expand="0" string="Group By">
+			</group>
+        </search>
+    </field>
+</record>
+
 <record id="action_dms_file" model="ir.actions.act_window">
 	<field name="name">Document Files</field>
 	<field name="res_model">muk_dms.file</field>

@@ -345,6 +345,7 @@ msgstr "Nombre de archivo"
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_data_database_tree
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_directory_form
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
+#: model:ir.ui.view,arch_db:muk_dms.view_dms_file_search
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_tree
 msgid "Files"
 msgstr "Ficheros"
@@ -353,6 +354,11 @@ msgstr "Ficheros"
 #: model:ir.ui.view,arch_db:muk_dms.view_muk_dms_configuration
 msgid "General"
 msgstr "General"
+
+#. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_dms_file_search
+msgid "Group By"
+msgstr "Agrupar por"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_access_groups
