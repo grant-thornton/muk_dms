@@ -112,6 +112,7 @@
 				<group>
 					<group string="Data">
 						<field name="size" widget="dms_size" />
+						<field name="origin"/>
 						<field name="extension" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
 						<field name="mimetype" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
 					</group>

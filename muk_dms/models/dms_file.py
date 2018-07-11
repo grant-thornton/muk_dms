@@ -126,7 +126,9 @@ class File(dms_base.DMSModel):
     
     code = fields.Char(
         string='Sequence', copy=True)
-
+    
+    origin = fields.Char()
+    
     abbreviation_code = fields.Char(
         string='Code',
         copy=True, compute='_compute_abbreviation_code')

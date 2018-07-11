@@ -544,6 +544,11 @@ msgid "Operation"
 msgstr "Operación"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_origin
+msgid "Origin"
+msgstr "Origen"
+
+#. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_parent_directory
 msgid "Parent Directory"
 msgstr "Directorio padre"
