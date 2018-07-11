@@ -63,6 +63,7 @@
 			<field name="perm_write" invisible="1" />
 			<field name="perm_unlink" invisible="1" />
 			<field name="name" />
+			<field name="abbreviation"/>
 			<field name="size" widget="dms_size" />
 			<field name="path" widget="dms_path" />
 			<field name="settings" />
@@ -92,6 +93,7 @@
 				</div>
  				<group>
  					<field name="relational_path" widget="dms_relpath" />
+ 					<field name="abbreviation"/>
 				</group>
 				<group string="Information">
 					<group>

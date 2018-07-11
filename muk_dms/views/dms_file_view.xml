@@ -52,6 +52,7 @@
 			<field name="perm_write" invisible="1" />
 			<field name="perm_unlink" invisible="1" />
 			<field name="code"/>
+			<field name="abbreviation_code"/>
 			<field name="name" />
 			<field name="mimetype" />
 			<field name="size" widget="dms_size" />
@@ -105,7 +106,8 @@
 				</div>
  				<group>
  					<field name="relational_path" widget="dms_relpath" />
- 					<field name="code" readonly="True"/>
+ 					<field name="code" readonly="True" invisible="True"/>
+ 					<field name="abbreviation_code"/>
 				</group>
 				<group>
 					<group string="Data">

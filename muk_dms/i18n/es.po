@@ -26,6 +26,11 @@ msgid "<span>(*) This configuration is related to the company you're logged into
 msgstr "<span>(*) Esta configuración está relacionada con la compañía en la que está conectado</span>"
 
 #. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_abbreviation
+msgid "Abbreviation"
+msgstr "Abreviatura"
+
+#. module: muk_dms
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_directory_form
 #: model:ir.ui.view,arch_db:muk_dms.view_dms_file_form
 msgid "Access Information"
@@ -70,7 +75,7 @@ msgid "Changing the settings can cause a heavy migration process."
 msgstr "Cambiar las configuraciones puede causar un proceso de migración pesado."
 
 #. module: muk_dms
-#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_code
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_abbreviation_code
 msgid "Code"
 msgstr "Código"
 
@@ -591,6 +596,11 @@ msgstr "Guardar tipo"
 #, python-format
 msgid "Search..."
 msgstr "Buscar..."
+
+#. module: muk_dms
+#: model:ir.model.fields,field_description:muk_dms.field_muk_dms_file_code
+msgid "Sequence"
+msgstr "Secuencia"
 
 #. module: muk_dms
 #: model:ir.model.fields,field_description:muk_dms.field_muk_dms_directory_settings

@@ -5,7 +5,7 @@
         <record id="seq_dms_file_sequence" model="ir.sequence">
             <field name="name">Document file</field>
             <field name="code">muk_dms.file</field>
-            <field name="prefix">DOC/%(range_year)s/</field>
+            <field name="prefix">%(range_year)s/</field>
             <field name="padding">5</field>
             <field name="company_id" eval="False"/>
         </record>

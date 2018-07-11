@@ -124,6 +124,8 @@ class Directory(dms_base.DMSModel):
         store=True,
         readonly=True,
         compute='_compute_relational_path')
+
+    abbreviation = fields.Char()
         
     #----------------------------------------------------------
     # Functions

@@ -125,7 +125,11 @@ class File(dms_base.DMSModel):
         related='locked.locked_by_ref')
     
     code = fields.Char(
-        string='Code', copy=True)
+        string='Sequence', copy=True)
+
+    abbreviation_code = fields.Char(
+        string='Code',
+        copy=True, compute='_compute_abbreviation_code')
     
     active = fields.Boolean(default=True)
     
@@ -253,7 +257,17 @@ class File(dms_base.DMSModel):
                     path = os.path.join(_img_path, "file_unkown.png")
                 with open(path, "rb") as image_file:
                     record.thumbnail = base64.b64encode(image_file.read())
-            
+    
+    @api.multi
+    @api.depends('directory.abbreviation', 'directory', 'version')
+    def _compute_abbreviation_code(self):
+        for file in self:
+            if file.directory.abbreviation:
+                file.abbreviation_code = \
+                    file.directory.abbreviation + '/' + file.code
+            else:
+                file.abbreviation_code = 'DOC/' + file.code
+
     #----------------------------------------------------------
     # Create, Update, Delete
     #----------------------------------------------------------
