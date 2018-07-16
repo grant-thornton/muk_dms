@@ -119,9 +119,9 @@
   margin: 0;
   padding: 2px;
   position: absolute;
-  background: #f5f5f5;
-  border: 1px solid #979797;
-  box-shadow: 2px 2px 2px #999999;
+  background: #39e7ef;
+  border: 1px solid #39e7ef;
+  box-shadow: 2px 2px 2px #39e7ef;
 }
 .vakata-context ul {
   list-style: none;
@@ -151,8 +151,8 @@
 }
 .vakata-context li > a:hover {
   position: relative;
-  background-color: #e8eff7;
-  box-shadow: 0 0 2px #0a6aa1;
+  background-color: #39e7ef;
+  box-shadow: 0 0 2px #39e7ef;
 }
 .vakata-context li > a.vakata-context-parent {
   background-image: url("data:image/gif;base64,R0lGODlhCwAHAIAAACgoKP///yH5BAEAAAEALAAAAAALAAcAAAIORI4JlrqN1oMSnmmZDQUAOw==");
@@ -164,20 +164,20 @@
 }
 .vakata-context .vakata-context-hover > a {
   position: relative;
-  background-color: #e8eff7;
-  box-shadow: 0 0 2px #0a6aa1;
+  background-color: #39e7ef;
+  box-shadow: 0 0 2px #39e7ef;
 }
 .vakata-context .vakata-context-separator > a,
 .vakata-context .vakata-context-separator > a:hover {
   background: white;
   border: 0;
-  border-top: 1px solid #e2e3e3;
+  border-top: 1px solid #39e7ef;
   height: 1px;
   min-height: 1px;
   max-height: 1px;
   padding: 0;
   margin: 0 0 0 2.4em;
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid #39e7ef;
   text-shadow: 0 0 0 transparent;
   box-shadow: 0 0 0 transparent;
   border-radius: 0;
@@ -210,7 +210,7 @@
   height: 2.4em;
   background: white;
   margin: 0 0.5em 0 0;
-  border-left: 1px solid #e2e3e3;
+  border-left: 1px solid #39e7ef;
 }
 .vakata-context .vakata-contextmenu-shortcut {
   font-size: 0.8em;
@@ -232,7 +232,7 @@
 .vakata-context-rtl .vakata-context-separator > a {
   margin: 0 2.4em 0 0;
   border-left: 0;
-  border-right: 1px solid #e2e3e3;
+  border-right: 1px solid #39e7ef;
 }
 .vakata-context-rtl .vakata-context-left ul {
   right: auto;
@@ -245,8 +245,8 @@
 }
 .vakata-context-rtl li > a .vakata-contextmenu-sep {
   margin: 0 0 0 0.5em;
-  border-left-color: white;
-  background: #e2e3e3;
+  border-left-color: #39e7ef;
+  background: #39e7ef;
 }
 #jstree-marker {
   position: absolute;
@@ -297,33 +297,33 @@
   transition: background-color 0.15s, box-shadow 0.15s;
 }
 .jstree-default .jstree-hovered {
-  background: #e7f4f9;
+  background: #39e7ef;
   border-radius: 2px;
-  box-shadow: inset 0 0 1px #cccccc;
+  box-shadow: inset 0 0 1px #39e7ef;
 }
 .jstree-default .jstree-context {
-  background: #e7f4f9;
+  background: #39e7ef;
   border-radius: 2px;
-  box-shadow: inset 0 0 1px #cccccc;
+  box-shadow: inset 0 0 1px #39e7ef;
 }
 .jstree-default .jstree-clicked {
-  background: #beebff;
+  background: #39e7ef;
   border-radius: 2px;
-  box-shadow: inset 0 0 1px #999999;
+  box-shadow: inset 0 0 1px #39e7ef;
 }
 .jstree-default .jstree-no-icons .jstree-anchor > .jstree-themeicon {
   display: none;
 }
 .jstree-default .jstree-disabled {
   background: transparent;
-  color: #666666;
+  color: #39e7ef;
 }
 .jstree-default .jstree-disabled.jstree-hovered {
   background: transparent;
   box-shadow: none;
 }
 .jstree-default .jstree-disabled.jstree-clicked {
-  background: #efefef;
+  background: #39e7ef;
 }
 .jstree-default .jstree-disabled > .jstree-icon {
   opacity: 0.8;
@@ -336,7 +336,7 @@
 }
 .jstree-default .jstree-search {
   font-style: italic;
-  color: #8b0000;
+  color: #39e7ef;
   font-weight: bold;
 }
 .jstree-default .jstree-no-checkboxes .jstree-checkbox {
@@ -347,13 +347,13 @@
   box-shadow: none;
 }
 .jstree-default.jstree-checkbox-no-clicked .jstree-clicked.jstree-hovered {
-  background: #e7f4f9;
+  background: #39e7ef;
 }
 .jstree-default.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked {
   background: transparent;
 }
 .jstree-default.jstree-checkbox-no-clicked > .jstree-wholerow-ul .jstree-wholerow-clicked.jstree-wholerow-hovered {
-  background: #e7f4f9;
+  background: #39e7ef;
 }
 .jstree-default > .jstree-striped {
   min-width: 100%;
@@ -372,12 +372,12 @@
   box-sizing: border-box;
 }
 .jstree-default .jstree-wholerow-hovered {
-  background: #e7f4f9;
+  background: #39e7ef;
 }
 .jstree-default .jstree-wholerow-clicked {
-  background: #beebff;
-  background: -webkit-linear-gradient(top, #beebff 0%, #a8e4ff 100%);
-  background: linear-gradient(to bottom, #beebff 0%, #a8e4ff 100%);
+  background: #39e7ef;
+  background: -webkit-linear-gradient(top, #39e7ef 0%, #39e7ef 100%);
+  background: linear-gradient(to bottom, #39e7ef 0%, #39e7ef 100%);
 }
 .jstree-default .jstree-node {
   min-height: 24px;
@@ -429,8 +429,9 @@
   background-position: -260px -4px;
 }
 .jstree-default > .jstree-no-dots .jstree-node,
-.jstree-default > .jstree-no-dots .jstree-leaf > .jstree-ocl {
-  background: transparent;
+.jstree-default > .jstree-no-dots .jstree-leaf {
+  /*Change the background of the tree*/
+  background: white;
 }
 .jstree-default > .jstree-no-dots .jstree-open > .jstree-ocl {
   background-position: -36px -4px;
@@ -445,7 +446,7 @@
   background: transparent;
 }
 .jstree-default .jstree-disabled.jstree-clicked {
-  background: #efefef;
+  background: #39e7ef;
 }
 .jstree-default .jstree-checkbox {
   background-position: -164px -4px;
@@ -813,7 +814,7 @@
   background: transparent;
 }
 .jstree-default-large .jstree-disabled.jstree-clicked {
-  background: #efefef;
+  background: #39e7ef;
 }
 .jstree-default-large .jstree-checkbox {
   background-position: -160px 0px;
@@ -1048,20 +1049,20 @@
   .jstree-default-responsive .jstree-wholerow {
     border-top: 1px solid rgba(255, 255, 255, 0.7);
     border-bottom: 1px solid rgba(64, 64, 64, 0.2);
-    background: #ebebeb;
+    background: #39e7ef;
     height: 40px;
   }
   .jstree-default-responsive .jstree-wholerow-hovered {
-    background: #e7f4f9;
+    background: #39e7ef;
   }
   .jstree-default-responsive .jstree-wholerow-clicked {
-    background: #beebff;
+    background: #39e7ef;
   }
   .jstree-default-responsive .jstree-children .jstree-last > .jstree-wholerow {
-    box-shadow: inset 0 -6px 3px -5px #666666;
+    box-shadow: inset 0 -6px 3px -5px #39e7ef;
   }
   .jstree-default-responsive .jstree-children .jstree-open > .jstree-wholerow {
-    box-shadow: inset 0 6px 3px -5px #666666;
+    box-shadow: inset 0 6px 3px -5px #39e7ef;
     border-top: 0;
   }
   .jstree-default-responsive .jstree-children .jstree-open + .jstree-open {
