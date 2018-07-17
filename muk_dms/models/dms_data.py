@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ###################################################################################
-# 
+#
 #    Copyright (C) 2017 MuK IT GmbH
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -28,49 +28,50 @@ from odoo.exceptions import ValidationError, AccessError
 
 _logger = logging.getLogger(__name__)
 
+
 class DataModel(models.AbstractModel):
     _name = 'muk_dms.data'
     _description = 'Base Data Model'
-    
+
     @abc.abstractmethod
     def type(self):
         """Returns the data type."""
-    
+
     @abc.abstractmethod
     def content(self):
         """Returns the data object."""
-        
+
     @abc.abstractmethod
     def update(self, values):
         """Updated the data object."""
-        
+
+
 class DatabaseDataModel(models.Model):
     _name = 'muk_dms.data_database'
     _description = 'Database Data Model'
-    
+
     _inherit = 'muk_dms.data'
-    
+
     #----------------------------------------------------------
     # Database
     #----------------------------------------------------------
-    
+
     data = fields.Binary(
         string="Content")
-    
+
     #----------------------------------------------------------
     # Abstract Implementation
     #----------------------------------------------------------
-    
+
     def type(self):
         return "database"
-    
+
     def content(self):
         return self.data
-    
+
     def update(self, values):
         if 'content' in values:
             self.data = values['content']
-    
+
     def delete(self):
         self.file = None
-    
