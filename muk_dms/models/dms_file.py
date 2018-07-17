@@ -268,7 +268,7 @@ class File(dms_base.DMSModel):
                 file.abbreviation_code = \
                     file.directory.abbreviation + '/' + file.code
             else:
-                file.abbreviation_code = 'DOC/' + file.code
+                file.abbreviation_code = 'DOC/' + file.code or ''
 
     #----------------------------------------------------------
     # Create, Update, Delete
