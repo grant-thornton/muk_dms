@@ -107,7 +107,7 @@
  				<group>
  					<field name="relational_path" widget="dms_relpath" />
  					<field name="code" readonly="True" invisible="True"/>
- 					<field name="abbreviation_code"/>
+ 					<field name="abbreviation_code" readonly="True"/>
 				</group>
 				<group>
 					<group string="Data">
