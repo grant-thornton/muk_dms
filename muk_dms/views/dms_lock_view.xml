@@ -39,7 +39,7 @@
 	<field name="view_mode">tree</field>
 </record>
 
-<menuitem id="menu_dms_lock" name="Locks"
-	parent="cat_menu_muk_dms_locks" action="action_dms_lock" />
+<!--<menuitem id="menu_dms_lock" name="Locks"
+	parent="cat_menu_muk_dms_locks" action="action_dms_lock" />-->
 
 </odoo>

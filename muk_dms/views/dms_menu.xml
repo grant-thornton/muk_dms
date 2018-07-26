@@ -66,6 +66,7 @@
     	name="Locks"
     	groups="group_dms_admin"
     	parent="main_menu_muk_dms"
+        action="action_dms_lock"
         sequence="40"/>
 
     <menuitem
