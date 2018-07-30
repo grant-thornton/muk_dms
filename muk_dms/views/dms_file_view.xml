@@ -113,11 +113,11 @@
 					<group string="Data">
 						<field name="size" widget="dms_size" />
 						<field name="origin"/>
-						<field name="extension" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
-						<field name="mimetype" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin"/>
+						<field name="extension" groups="muk_dms.group_dms_manager"/>
+						<field name="mimetype" groups="muk_dms.group_dms_manager"/>
 					</group>
-					<group string="Settings" groups="muk_dms.group_user">
-						<field name="settings" />
+					<group string="Settings">
+						<field name="settings" groups="muk_dms.group_dms_admin"/>
 						<field name="directory" />
 					</group>
 				</group>
