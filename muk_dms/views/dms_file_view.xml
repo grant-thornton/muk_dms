@@ -116,8 +116,8 @@
 						<field name="extension" groups="muk_dms.group_dms_manager"/>
 						<field name="mimetype" groups="muk_dms.group_dms_manager"/>
 					</group>
-					<group string="Settings">
-						<field name="settings" groups="muk_dms.group_dms_admin"/>
+					<group string="Settings" groups="muk_dms.group_dms_user">
+						<field name="settings" />
 						<field name="directory" />
 					</group>
 				</group>
