@@ -14,24 +14,26 @@
     GNU Affero General Public License for more details.
 
     You should have received a copy of the GNU Affero General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
 <odoo>
-					
+
 <record id="view_dms_directory_form" model="ir.ui.view">
 	<field name="name">muk_dms_directory.form</field>
 	<field name="model">muk_dms.directory</field>
 	<field name="inherit_id" ref="muk_dms.view_dms_directory_form" />
 	<field name="arch" type="xml">
 		<xpath expr="//field[@name='is_root_directory']" position="after">
-			<field name="inherit_groups" attrs="{'invisible':[('perm_access','=',False)]}"/>
+			<field name="inherit_groups" groups="muk_dms.group_dms_manager"
+				attrs="{'invisible':[('perm_access','=',False)]}"/>
 		</xpath>
 		<xpath expr="//field[@name='perm_read']" position="after">
-			<field name="perm_access" readonly="1" />
+			<field name="perm_access" readonly="1" groups="muk_dms.group_dms_manager"/>
 		</xpath>
 		<xpath expr="//page[last()]" position="after">
-			<page string="Groups" attrs="{'invisible':[('perm_access','=',False)]}">
+			<page string="Groups" groups="muk_dms.group_dms_manager"
+				attrs="{'invisible':[('perm_access','=',False)]}">
 				<field name="groups">
 					<tree string="Groups">
 						<field name="name" />
@@ -43,7 +45,8 @@
 					</tree>
 				</field>
 			</page>
-			<page string="Complete Groups" attrs="{'invisible':[('perm_access','=',False)]}">
+			<page string="Complete Groups" groups="muk_dms.group_dms_manager"
+				attrs="{'invisible':[('perm_access','=',False)]}">
 				<field name="complete_groups">
 					<tree string="Complete Groups">
 						<field name="name" />
@@ -58,5 +61,5 @@
 		</xpath>
 	</field>
 </record>
-	
+
 </odoo>

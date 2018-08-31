@@ -25,13 +25,16 @@
 	<field name="inherit_id" ref="muk_dms.view_dms_file_form" />
 	<field name="arch" type="xml">
 		<xpath expr="//field[@name='settings']" position="after">
-			<field name="inherit_groups" attrs="{'invisible':[('perm_access','=',False)]}"/>
+			<field name="inherit_groups"  groups="muk_dms.group_dms_manager"
+				attrs="{'invisible':[('perm_access','=',False)]}"/>
 		</xpath>
 		<xpath expr="//field[@name='perm_read']" position="after">
-			<field name="perm_access" readonly="1" />
+			<field name="perm_access" readonly="1"
+				 groups="muk_dms.group_dms_manager"/>
 		</xpath>
 		<xpath expr="//page[last()]" position="after">
-			<page string="Groups" attrs="{'invisible':[('perm_access','=',False)]}" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
+			<page string="Groups"  groups="muk_dms.group_dms_manager"
+				attrs="{'invisible':[('perm_access','=',False)]}">
 				<field name="groups">
 					<tree string="Groups">
 						<field name="name" />
@@ -43,7 +46,9 @@
 					</tree>
 				</field>
 			</page>
-			<page string="Complete Groups" attrs="{'invisible':[('perm_access','=',False)]}" groups="muk_dms.group_dms_manager,muk_dms.group_dms_admin">
+			<page string="Complete Groups"
+				attrs="{'invisible':[('perm_access','=',False)]}"
+				groups="muk_dms.group_dms_manager">
 				<field name="complete_groups">
 					<tree string="Complete Groups">
 						<field name="name" />
@@ -58,5 +63,5 @@
 		</xpath>
 	</field>
 </record>
-	
+
 </odoo>

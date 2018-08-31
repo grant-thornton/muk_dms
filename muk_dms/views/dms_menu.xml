@@ -22,7 +22,7 @@
     <menuitem
         id="main_menu_muk_dms" name="Document Management"
     	web_icon="muk_dms,static/description/icon.png"
-    	groups="group_dms_user" />
+    	groups="group_dms_viewer" />
 
     <menuitem
         id="cat_menu_muk_dms_documents"
@@ -59,7 +59,8 @@
         id="menu_dms_data_database"
         name="Database Data"
         parent="cat_menu_muk_dms_files"
-        action="action_dms_data_database" />
+        action="action_dms_data_database"
+        groups="group_dms_admin"/>
 
     <menuitem
         id="cat_menu_muk_dms_locks"
@@ -82,6 +83,6 @@
         parent="cat_menu_muk_dms_config"
         sequence="1"
         action="action_muk_dms_configuration"
-        groups="base.group_system"/>
+        groups="base.group_system,group_dms_admin"/>
 
 </odoo>
