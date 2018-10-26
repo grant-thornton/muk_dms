@@ -51,6 +51,7 @@
 					<group>
 						<field name="parent_group" />
 						<field name="count_users" />
+						<field name="default_group_for_users"/>
 					</group>
 					<group>
 						<field name="count_directories" />

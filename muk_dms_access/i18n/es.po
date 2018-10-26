@@ -67,6 +67,11 @@ msgid "Created on"
 msgstr "Creado el"
 
 #. module: muk_dms_access
+#: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_default_group_for_users
+msgid "Default group for users"
+msgstr "Grupo por defecto usuarios"
+
+#. module: muk_dms_access
 #: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_departments
 #: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form
 msgid "Departments"
@@ -211,6 +216,7 @@ msgid "Unlink"
 msgstr "Eliminar"
 
 #. module: muk_dms_access
+#: model:ir.model,name:muk_dms_access.model_res_users
 #: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_count_users
 #: model:ir.model.fields,field_description:muk_dms_access.field_muk_dms_access_groups_users
 #: model:ir.ui.view,arch_db:muk_dms_access.view_dms_groups_form

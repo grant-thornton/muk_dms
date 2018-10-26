@@ -23,5 +23,6 @@ from . import dms_base
 from . import dms_directory
 from . import dms_file
 from . import dms_access_groups
+from . import res_users
 from . import hr_department
 from . import hr_job
