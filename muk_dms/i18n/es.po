@@ -537,6 +537,11 @@ msgid "Object Reference"
 msgstr "Referencia de objeto"
 
 #. module: muk_dms
+#: model:ir.ui.view,arch_db:muk_dms.view_dms_file_tree
+msgid "Odoo write_date"
+msgstr "Fecha actualización"
+
+#. module: muk_dms
 #. openerp-web
 #: code:addons/muk_dms/static/src/js/dms_views_documents.js:93
 #: code:addons/muk_dms/static/src/xml/dms_views.xml:20
