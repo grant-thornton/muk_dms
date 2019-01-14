@@ -98,7 +98,7 @@
 						</group>
 						<group string="Settings">
 							<field groups="muk_dms.group_dms_admin" name="settings"/>
-							<field name="directory"/>
+							<field name="directory" options="{'no_create': True}"/>
 						</group>
 					</group>
 					<notebook>
