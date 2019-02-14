@@ -144,6 +144,7 @@
 				<field name="name"/>
 				<field name="code"/>
 				<field name="relational_path"/>
+				<field name="directory"/>
 				<group expand="0" string="Group By"/>
 			</search>
 		</field>

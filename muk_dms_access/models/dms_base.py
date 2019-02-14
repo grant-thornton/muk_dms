@@ -90,21 +90,22 @@ class DMSAdvancedAccessModel(dms_base.DMSAbstractModel):
     def check_access_rule(self, operation):
         if operation != 'access':
             super(DMSAdvancedAccessModel, self).check_access_rule(operation)
-        if self.env.user.id == SUPERUSER_ID or self.user_has_groups('muk_dms.group_dms_admin'):
-            return
-        base, model = self._name.split(".")
-        for record in self:
-            sql = '''
-                SELECT perm_%s                
-                FROM muk_groups_complete_%s_rel r
-                JOIN muk_dms_access_groups g ON g.id = r.gid
-                JOIN muk_dms_groups_users_rel u ON u.gid = g.id
-                WHERE r.aid = %s AND u.uid = %s
-            ''' % (operation, model, record.id, self.env.user.id)
-            self.env.cr.execute(sql)
-            fetch = self.env.cr.fetchall()
-            if not any(list(map(lambda x: x[0], fetch))):
-                raise AccessError(_("This operation is forbidden!"))
+        # if self.env.user.id == SUPERUSER_ID or self.user_has_groups('muk_dms.group_dms_admin'):
+        #     return
+        # base, model = self._name.split(".")
+        # for record in self:
+        #     sql = '''
+        #         SELECT perm_%s                
+        #         FROM muk_groups_complete_%s_rel r
+        #         JOIN muk_dms_access_groups g ON g.id = r.gid
+        #         JOIN muk_dms_groups_users_rel u ON u.gid = g.id
+        #         WHERE r.aid = %s AND u.uid = %s
+        #     ''' % (operation, model, record.id, self.env.user.id)
+        #     self.env.cr.execute(sql)
+        #     fetch = self.env.cr.fetchall()
+        #     if not any(list(map(lambda x: x[0], fetch))):
+        #         import pdb;pdb.set_trace()
+        #         raise AccessError(_("This operation is forbidden!"))
     
     @api.model
     def _apply_ir_rules(self, query, mode='read'):
